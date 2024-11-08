@@ -10,7 +10,7 @@ namespace TrainingExcercise
     {
         public void Run()
         { 
-        int number = 0;
+        int number = -23;
         // Checking different conditions
         if (number > 0)
         {
