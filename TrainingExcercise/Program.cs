@@ -29,6 +29,9 @@ internal class Program
             Console.WriteLine("12. IfElseStatement");
             Console.WriteLine("13. ForLoop");
             Console.WriteLine("14. ForEachLoop");
+            Console.WriteLine("15. Whileloop");
+            Console.WriteLine("16. DoWhileLoop");
+            Console.WriteLine("17. Trycatchfinally");
             Console.Write("Enter your choice: ");
 
             string choice = Console.ReadLine();
@@ -103,6 +106,19 @@ internal class Program
                 case "14":
                     ForEachLoop forEachLoop = new ForEachLoop();
                     forEachLoop.Run(); break;
+
+                case "15":
+                    Whileloop whileloop = new Whileloop();
+                    whileloop.Run(); break;
+
+                case "16":
+                    DoWhileLoop doWhileLoop = new DoWhileLoop();
+                    doWhileLoop.Run(); break;
+
+                case "17":
+                    TryCatch tryCatch = new TryCatch();
+                    tryCatch.Run(); break;
+
                 default:
                     Console.WriteLine("Invalid choice. Please try again.");
                     break;
