@@ -32,6 +32,8 @@ internal class Program
             Console.WriteLine("15. Whileloop");
             Console.WriteLine("16. DoWhileLoop");
             Console.WriteLine("17. Trycatchfinally");
+            Console.WriteLine("18. ThrowException");
+            Console.WriteLine("19. Objects");
             Console.Write("Enter your choice: ");
 
             string choice = Console.ReadLine();
@@ -46,6 +48,8 @@ internal class Program
                 case "2":
                     ExplicitTypecasting explicitTypecasting = new ExplicitTypecasting();
                     explicitTypecasting.Run();
+                    explicitTypecasting = new ExplicitTypecasting(1);
+                    Console.WriteLine($"{explicitTypecasting.b}");
                     break;
 
                 case "3":
@@ -118,6 +122,14 @@ internal class Program
                 case "17":
                     TryCatch tryCatch = new TryCatch();
                     tryCatch.Run(); break;
+
+                case "18":
+                    ThrowException throwException = new ThrowException();
+                    throwException.Run(); break;
+
+                case "19":
+                    Objects objects = new Objects();
+                    objects.Run(); break;   
 
                 default:
                     Console.WriteLine("Invalid choice. Please try again.");

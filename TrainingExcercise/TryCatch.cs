@@ -16,7 +16,7 @@ namespace TrainingExcercise
                 int result = num1 / num2;  // This will throw an exception
                 Console.WriteLine("Result: " + result);
             }
-            catch (DivideByZeroException e)
+            catch (Exception e)
             {
                 Console.WriteLine("Error: Cannot divide by zero." + e.Message);
             }
