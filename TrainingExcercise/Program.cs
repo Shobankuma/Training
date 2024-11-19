@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using TrainingExcercise;
+using TrainingExcercise.YourNamespace;
 
 internal class Program
 {
@@ -34,6 +35,19 @@ internal class Program
             Console.WriteLine("17. Trycatchfinally");
             Console.WriteLine("18. ThrowException");
             Console.WriteLine("19. Objects");
+            Console.WriteLine("20. StackOverflow");
+            Console.WriteLine("21. ParseMethod");
+            Console.WriteLine("22. Try Parse Method");
+            Console.WriteLine("23. Convert class");
+            Console.WriteLine("24. Inheritence");
+            Console.WriteLine("25. Multiple Inheritence");
+            Console.WriteLine("26. Hirarchial Inheritence");
+            Console.WriteLine("27. Multilevel Inheritence");
+            Console.WriteLine("28. Method Overriding");
+            Console.WriteLine("29. Polymorphism");
+            Console.WriteLine("30. Method Overloading");
+            Console.WriteLine("31. Encapsulation");
+            Console.WriteLine("32. Abstraction");
             Console.Write("Enter your choice: ");
 
             string choice = Console.ReadLine();
@@ -129,7 +143,60 @@ internal class Program
 
                 case "19":
                     Objects objects = new Objects();
-                    objects.Run(); break;   
+                    objects.Run(); break;
+
+                case "20":
+                    StackOverflow stackOverflow = new StackOverflow();
+                    stackOverflow.Run(); break;
+
+                case "21":
+                    ParseMethod parseMethod = new ParseMethod();
+                    parseMethod.Run(); break;
+
+                case "22":
+                    TryParseMethod tryParseMethod = new TryParseMethod();
+                    tryParseMethod.Run(); break;
+
+                case "23":
+                    ConvertClass convertClass = new ConvertClass();
+                    convertClass.Run(); break;
+
+                case "24":
+                    Inheritence inheritence = new Inheritence();
+                    inheritence.Run(); break;
+
+                case "25":
+                    MultipleInheritance multipleInheritance = new MultipleInheritance();
+                    multipleInheritance.Run(); break;
+
+                case "26":
+                    HirarchialInheritance hirarchialInheritance = new HirarchialInheritance();
+                    hirarchialInheritance.Run(); break;
+
+                case "27":
+                    MultilevelInheritence multilevelInheritence = new MultilevelInheritence();
+                    multilevelInheritence.Run(); break;
+
+                case "28":
+                    MethodOveriding methodOveriding = new MethodOveriding();
+                    methodOveriding.Run(); break;
+
+                case "29":
+                    Polymorphism polymorphism = new Polymorphism();     
+                    polymorphism.Run(); break;
+
+                case "30":
+                    MethodOverloading methodOverloading = new MethodOverloading();
+                    methodOverloading.Run(); break;
+
+                case "31":
+                    Encapsultion encapsultion = new Encapsultion();
+                    encapsultion.Run(); break;
+
+                case "32":
+                    Abstarction abstarction = new Abstarction();
+                    abstarction.Run(); break;
+
 
                 default:
                     Console.WriteLine("Invalid choice. Please try again.");

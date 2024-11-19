@@ -4,6 +4,18 @@ namespace TrainingExcercise
 {
     internal class ExplicitTypecasting
     {
+        public int a;
+        public string b = null;
+        public ExplicitTypecasting()
+        {
+            a = 10;
+            b = "Shoban";
+            Console.WriteLine("Constructor1");
+        }
+        public ExplicitTypecasting(int a)
+        {
+            Console.WriteLine("Constructor2");
+        }
         public void Run()
         {
             double doubleValue = 42.5;
