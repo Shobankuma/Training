@@ -48,6 +48,13 @@ internal class Program
             Console.WriteLine("30. Method Overloading");
             Console.WriteLine("31. Encapsulation");
             Console.WriteLine("32. Abstraction");
+            Console.WriteLine("33. Single array");
+            Console.WriteLine("34. Multiarray");
+            Console.WriteLine("35. lists");
+            Console.WriteLine("36. Disctionary");
+            Console.WriteLine("37. Queue");
+            Console.WriteLine("38. Stack");
+            Console.WriteLine("39. delegates");
             Console.Write("Enter your choice: ");
 
             string choice = Console.ReadLine();
@@ -196,6 +203,43 @@ internal class Program
                 case "32":
                     Abstarction abstarction = new Abstarction();
                     abstarction.Run(); break;
+
+                case "33":
+                    SingleArray singleArray = new SingleArray();
+                    singleArray.Run(); break;
+
+                case "34":
+                    MultiArray multiArray = new MultiArray();   
+                    multiArray.Run(); break;
+
+                case "35":
+                    Lists lists = new Lists();  
+                    lists.Run(); break;
+
+                case "36":
+                    Dictionary dictionary = new Dictionary();
+                    dictionary.Run(); break;
+
+                case "37":
+                    Queue queue = new Queue();
+                    queue.Run(); break;
+
+                case "38":
+                    Stack stack = new Stack();
+                    stack.Run(); break;
+
+                case "39":
+                    Delegates delegates = new Delegates();
+                    delegates.Run(); break;
+
+                case "40":
+                    MulticastDelegates multicastDelegates = new MulticastDelegates();
+                    multicastDelegates.Run(); break;
+
+                case "41":
+                    Anonymous anonymous = new Anonymous();
+                    anonymous.Run(); break;
+
 
 
                 default:
