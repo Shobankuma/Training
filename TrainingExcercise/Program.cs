@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.IO;
 using TrainingExcercise;
 using TrainingExcercise.YourNamespace;
 
@@ -55,6 +55,39 @@ internal class Program
             Console.WriteLine("37. Queue");
             Console.WriteLine("38. Stack");
             Console.WriteLine("39. delegates");
+            Console.WriteLine("40. MulticastDelegates");
+            Console.WriteLine("41. Anonymous methods");
+            Console.WriteLine("42. LambdaExpression");
+            Console.WriteLine("43. LINQ Syntax");
+            Console.WriteLine("44. LinqMethodSyntax");
+            Console.WriteLine("45. LinqMethodChaining");
+            Console.WriteLine("46. LinqFiltering");
+            Console.WriteLine("47. LinqGroupBy");
+            Console.WriteLine("48. LinqSorting");
+            Console.WriteLine("49. LinqAggregation");
+            Console.WriteLine("50. LinqToXML Read");
+            Console.WriteLine("51. LinqToXML Query");
+            Console.WriteLine("52. LinqToXML Filter");
+            Console.WriteLine("53. LinqToXMl Sorting");
+            Console.WriteLine("54. LintoXMl Update");
+            Console.WriteLine("55. LintoXMl Add");
+            Console.WriteLine("56. LintoXMl Delete");
+            Console.WriteLine("57. LintoXMl Count");
+            Console.WriteLine("58. Events");
+            Console.WriteLine("59. Single thread");
+            Console.WriteLine("60. MultiThreading");
+            Console.WriteLine("61. ConstructorThread CLass");
+            Console.WriteLine("62. THREAD lOACKING");
+            Console.WriteLine("63. ThreadPrioirty");
+            Console.WriteLine("64. THREAD Performance");
+            Console.WriteLine("65. Multithreading Application");
+            Console.WriteLine("66. ADC data Processing");
+            Console.WriteLine("67. File Reader");
+            Console.WriteLine("68. File Writer");
+            Console.WriteLine("69. File Stream");
+            Console.WriteLine("70. Reflection Inspect");
+
+
             Console.Write("Enter your choice: ");
 
             string choice = Console.ReadLine();
@@ -240,8 +273,128 @@ internal class Program
                     Anonymous anonymous = new Anonymous();
                     anonymous.Run(); break;
 
+                case "42":
+                    LambdaExpression lambda = new LambdaExpression();
+                    lambda.Run(); break;
+
+                case "43":
+                    LINQ lINQ = new LINQ();
+                    lINQ.Run(); break;
+
+                case "44":
+                    LinqMethodSyntax linqMethod = new LinqMethodSyntax();
+                    linqMethod.Run(); break;
+
+                case "45":
+                    LinqMethodChaining linqMethodChaining = new LinqMethodChaining();
+                    linqMethodChaining.Run(); break;
+
+                case "46":
+                    LinqFiltering linqFiltering = new LinqFiltering();
+                    linqFiltering.Run(); break;
+
+                case "47":
+                    LinqGroupBy linqGroupBy = new LinqGroupBy();
+                    linqGroupBy.Run(); break;
+
+                case "48":
+                    LinqSorting linqSorting = new LinqSorting();
+                    linqSorting.Run(); break;
+
+                case "49":
+                    LinqAggregation linqAggregation = new LinqAggregation();
+                    linqAggregation.Run(); break;
+
+                case "50":
+                    LinqToXMLRead linqToXMLRead = new LinqToXMLRead();
+                    linqToXMLRead.Run(); break;
+
+                case "51":
+                    LinqToXMlQuery linqToXMlQuery = new LinqToXMlQuery();
+                    linqToXMlQuery.Run(); break;
+
+                case "52":
+                    LinqToXmlFilter linqToXmlFilter = new LinqToXmlFilter();
+                    linqToXmlFilter.Run(); break;
+
+                case "53":
+                    LinqToXMLSorting linqToXMLSorting = new LinqToXMLSorting();
+                    linqToXMLSorting.Run(); break;
+
+                case "54":
+                    LinqToXMLUpdate linqToXMLUpdate = new LinqToXMLUpdate();
+                    linqToXMLUpdate.Run(); break;
+
+                case "55":
+                    LinqToXMLADD linqToXMLADD = new LinqToXMLADD();
+                    linqToXMLADD.Run(); break;
+
+                case "56":
+                    LinqToXMLDelete linqToXMLDelete = new LinqToXMLDelete();
+                    linqToXMLDelete.Run(); break;
+
+                case "57":
+                    LinqToXMLCount linqToXMLCount = new LinqToXMLCount();
+                    linqToXMLCount.Run(); break;
+
+                case "58":
+                    Events events = new Events();
+                    events.Run(); break;
+
+                case "59":
+                   SingleThread singleThread = new SingleThread();
+                    singleThread.Run(); break;
+
+                case "60":
+                    MultiThreading multiThreading = new MultiThreading();
+                    multiThreading.Run(); break;
+
+                case "61":
+                    ConstructorThreadClass constructorThreadClass = new ConstructorThreadClass();
+                    constructorThreadClass.Run(); break;
+
+                case "62":
+                    ThreadLocking threadLocking = new ThreadLocking();
+                    threadLocking.Run(); break;
+
+                case "63":
+                    ThreadPrioirty threadPrioirty = new ThreadPrioirty();
+                    threadPrioirty.Run(); break;
+
+                case "64":
+                    ThreadPerformance threadPerformance = new ThreadPerformance();
+                    threadPerformance.Run(); break;
+
+                case "65":
+                    Console.WriteLine("Running MultithreadApplication...");
+
+                    MultithreadApplication multithreadApplication = new MultithreadApplication();
+                    multithreadApplication.Run(); break;
+
+                case "66":
+                    Console.WriteLine("Running adcApplication...");
+                    ADCDataProcessing dataProcessing = new ADCDataProcessing();
+                    dataProcessing.Run();
+                    break;
+
+                case "67":
+                    FileReader fileReader = new FileReader();
+                    fileReader.Run(); break;
+
+                case "68":
+                    FileWriter fileWriter = new FileWriter();   
+                    fileWriter.Run(); break;
+
+                case "69":
+                    Filesstream filesstream = new Filesstream();
+                    filesstream.Run(); break;
+
+                case "70":
+                    ReflectionInspect inspector = new ReflectionInspect();
+                    inspector.Run(); break;
 
 
+                    
                 default:
                     Console.WriteLine("Invalid choice. Please try again.");
                     break;
