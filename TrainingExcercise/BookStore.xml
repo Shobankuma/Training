@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bookstore>
+    <Books>
+        <Book id="1">
+            <Title>The Catcher in the Rye</Title>
+            <Author>
+                <FirstName>J.D.</FirstName>
+                <LastName>Salinger</LastName>
+            </Author>
+            <Category>Fiction</Category>
+            <Price currency="USD">10.99</Price>
+            <PublishedYear>1951</PublishedYear>
+        </Book>
+        <Book id="2">
+            <Title>To Kill a Mockingbird</Title>
+            <Author>
+                <FirstName>Harper</FirstName>
+                <LastName>Lee</LastName>
+            </Author>
+            <Category>Fiction</Category>
+            <Price currency="USD">7.99</Price>
+            <PublishedYear>1960</PublishedYear>
+        </Book>
+        <Book id="3">
+            <Title>The Great Gatsby</Title>
+            <Author>
+                <FirstName>F. Scott</FirstName>
+                <LastName>Fitzgerald</LastName>
+            </Author>
+            <Category>Classic</Category>
+            <Price currency="USD">8.99</Price>
+            <PublishedYear>1925</PublishedYear>
+        </Book>
+        <Book id="4">
+            <Title>Introduction to LINQ</Title>
+            <Author>
+                <FirstName>John</FirstName>
+                <LastName>Doe</LastName>
+            </Author>
+            <Category>Programming</Category>
+            <Price currency="USD">29.99</Price>
+            <PublishedYear>2022</PublishedYear>
+        </Book>
+        <Book id="5">
+            <Title>Clean Code</Title>
+            <Author>
+                <FirstName>Robert</FirstName>
+                <LastName>Martin</LastName>
+            </Author>
+            <Category>Programming</Category>
+            <Price currency="USD">35.50</Price>
+            <PublishedYear>2008</PublishedYear>
+        </Book>
+        <Book id="6">
+            <Title>Design Patterns</Title>
+            <Author>
+                <FirstName>Erich</FirstName>
+                <LastName>Gamma</LastName>
+            </Author>
+            <Category>Programming</Category>
+            <Price currency="USD">45.00</Price>
+            <PublishedYear>1994</PublishedYear>
+        </Book>
+    </Books>
+</Bookstore>
